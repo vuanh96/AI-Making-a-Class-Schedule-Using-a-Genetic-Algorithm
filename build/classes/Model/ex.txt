@@ -1,0 +1,374 @@
+
+#prof
+	id = 1
+	name = Victor
+#end
+
+#prof
+	id = 2
+	name = Red
+#end
+
+#prof
+	id = 3
+	name = Philip
+#end
+
+#prof
+	id = 4
+	name = Marry
+#end
+
+#prof
+	id = 5
+	name = Don
+#end
+
+#prof
+	id = 6
+	name = Mark
+#end
+
+#prof
+	id = 7
+	name = Peter
+#end
+
+#prof
+	id = 8
+	name = John
+#end
+
+#prof
+	id = 9
+	name = Ben
+#end
+
+#prof
+	id = 10
+	name = Mike
+#end
+
+#prof
+	id = 11
+	name = Steve
+#end
+
+#prof
+	id = 12
+	name = Ann
+#end
+
+#prof
+	id = 13
+	name = Alex
+#end
+
+#course
+	id = 1
+	name = Introduction to Programming
+#end
+
+#course
+	id = 2
+	name = Introduction to Computer Architecture
+#end
+
+#course
+	id = 3
+	name = Business Applications
+#end
+
+#course
+	id = 4
+	name = English
+#end
+
+#course
+	id = 5
+	name = Discrete Mathematic I
+#end
+
+#course
+	id = 6
+	name = Linear Algebra
+#end
+
+#course
+	id = 7
+	name = Introduction to Information Technology I
+#end
+
+#course
+	id = 8
+	name = System Administration and Maintenance I
+#end
+
+#room
+	name = R3
+	lab = true
+	size = 24
+        distance = 0
+#end
+
+#room
+	name = R7
+	lab = false
+	size = 60
+        distance = 1
+#end
+
+#group
+	id = 1
+	name = 1O1
+	size = 19
+#end
+
+#group
+	id = 2
+	name = 1O2
+	size = 19
+#end
+
+#group
+	id = 3
+	name = 1O3
+	size = 19
+#end
+
+#group
+	id = 4
+	name = 1S1
+	size = 19
+#end
+
+#class
+        id = 1
+	professor = 1
+	course = 1
+	duration = 2
+	group = 1
+	group = 2
+#end
+
+#class
+        id = 2
+	professor = 1
+	course = 1
+	duration = 2
+	group = 3
+	group = 4
+#end
+
+#class
+        id = 3
+	professor = 9
+	course = 1
+	duration = 3
+	group = 1
+	lab = true
+#end
+
+#class
+        id = 4
+	professor = 9
+	course = 1
+	duration = 3
+	group = 2
+	lab = true
+#end
+
+#class
+        id = 5
+	professor = 9
+	course = 1
+	duration = 3
+	group = 3
+	lab = true
+#end
+
+#class
+        id = 6
+	professor = 9
+	course = 1
+	duration = 3
+	group = 4
+	lab = true
+#end
+
+#class
+        id = 7
+	professor = 2
+	course = 2
+	duration = 2
+	group = 3
+	group = 4
+#end
+
+#class
+        id = 8
+	professor = 2
+	course = 2
+	duration = 2
+	group = 1
+	group = 2
+#end
+
+#class
+        id = 9
+	professor = 3
+	course = 2
+	duration = 2
+	group = 1
+	lab = true
+#end
+
+#class
+        id = 10
+	professor = 3
+	course = 2
+	duration = 2
+	group = 2
+	lab = true
+#end
+
+#class
+        id = 11
+	professor = 3
+	course = 2
+	duration = 2
+	group = 3
+	lab = true
+#end
+
+#class
+        id = 12
+	professor = 3
+	course = 2
+	duration = 2
+	group = 4
+	lab = true
+#end
+
+#class
+        id = 13
+	professor = 4
+	course = 4
+	duration = 2
+	group = 3
+	group = 4
+#end
+
+#class
+        id = 14
+	professor = 4
+	course = 4
+	duration = 2
+	group = 3
+	group = 4
+#end
+
+#class
+        id = 15
+	professor = 4
+	course = 4
+	duration = 2
+	group = 1
+	group = 2
+#end
+
+#class
+        id = 16
+	professor = 4
+	course = 4
+	duration = 2
+	group = 1
+	group = 2
+#end
+
+#class
+        id = 17
+	professor = 5
+	course = 6
+	duration = 2
+	group = 1
+	group = 2
+	group = 3
+#end
+
+#class
+        id = 18
+	professor = 5
+	course = 6
+	duration = 2
+	group = 1
+	group = 2
+	group = 3
+#end
+
+#class
+        id = 19
+	professor = 7
+	course = 5
+	duration = 2
+	group = 1
+	group = 2
+	group = 3
+#end
+
+#class
+        id = 20
+	professor = 7
+	course = 5
+	duration = 2
+	group = 1
+	group = 2
+#end
+
+#class
+        id = 21
+	professor = 10
+	course = 5
+	duration = 2
+	group = 3
+#end
+
+#class
+        id = 22
+	professor = 8
+	course = 3
+	duration = 2
+	group = 2
+#end
+
+#class
+        id = 23
+	professor = 8
+	course = 3
+	duration = 2
+	group = 3
+#end
+
+#class
+        id = 24
+	professor = 12
+	course = 3
+	duration = 4
+	group = 4
+#end
+
+#class
+        id = 25
+	professor = 12
+	course = 7
+	duration = 2
+	group = 4
+#end
+
+#class
+        id = 26
+	professor = 13
+	course = 8
+	duration = 2
+	group = 4
+#end
