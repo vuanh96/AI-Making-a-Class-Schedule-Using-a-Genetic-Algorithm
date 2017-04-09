@@ -20,7 +20,7 @@ public class GA {
     private final double desiredFitness;       //Fitness mong muon
     private final int popSize;                 //So luong ca the
     private Schedule bestOfPopulation;   //ca the tot nhat trong quan the hien tai
-    private final Schedule bestOfBest;         //ca the tot nhat qua cac the he  
+    private Schedule bestOfBest;         //ca the tot nhat qua cac the he  
     private final ArrayList<Schedule> population;           //Quan the ban dau
     private final ArrayList<Schedule> nextPopulation;       //Quan the sau
     private ArrayList<Double> rulet;                           //Banh xe Rulet ung vi vi tri xac suat cua tung ca the trong quan the
@@ -74,10 +74,7 @@ public class GA {
     //Thay doi ca the tot nhat neu quan the xuat hien ca the tot hon qua cac the he
     public void findBestOfBest() {
         if ((bestOfPopulation.getFitness() > bestOfBest.getFitness()) || (bestOfPopulation.getFitness() == bestOfBest.getFitness() && bestOfPopulation.softConflict() < bestOfBest.softConflict())) {
-            bestOfBest.setClasses(bestOfPopulation.getClasses());
-            bestOfBest.setSlots(bestOfPopulation.getSlots());
-            bestOfBest.setFitness(bestOfPopulation.getFitness());
-            bestOfBest.setCriteria(bestOfPopulation.getCriteria());
+            bestOfBest = bestOfPopulation;
         }
     }
 

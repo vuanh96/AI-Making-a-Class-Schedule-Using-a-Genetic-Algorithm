@@ -2,7 +2,6 @@ package View;
 
 import AI.CourseClass;
 import AI.Schedule;
-import AI.StudentsGroup;
 import Model.InputFromMySQL;
 import java.io.File;
 import java.io.IOException;

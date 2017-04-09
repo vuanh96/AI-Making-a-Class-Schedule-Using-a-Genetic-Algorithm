@@ -53,5 +53,5 @@ public class Professor {
     public void addCourseClass(CourseClass courseClass){
         courseClasses.add(courseClass);
     }
-     
+ 
 }

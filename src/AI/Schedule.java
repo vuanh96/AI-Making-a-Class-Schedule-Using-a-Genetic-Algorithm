@@ -297,7 +297,7 @@ public class Schedule {
                 for (int j = 0; j < dur; j++) {
                     //Kiem tra trung lap voi cac lop khac tung tiet 
                     ArrayList<CourseClass> lc = slots.get(t + j);
-                    if (lc == null) {
+                    if (lc.isEmpty()) {
                         continue;
                     }
                     for (int k = 0; k < lc.size(); k++) {
@@ -361,11 +361,8 @@ public class Schedule {
     public void showSchedule() {
         for (int i = 0; i < DAY_HOURS * DAY_NUM * ROOM_NUM; i++) {
             System.out.println("************" + i);
-            if (slots.get(i) == null) {
-                System.out.println("null");
-            } else {
-                for (CourseClass cc : slots.get(i)) {
-                    System.out.println("Class:" + cc.getId());
+            for (CourseClass cc : slots.get(i)) {
+                System.out.println("Class:" + cc.getId());
 //                    System.out.println(cc.getProfessor().getName());
 //                    System.out.println(cc.getCourse().getName());
 //                    cc.getGroups().stream().forEach((sg) -> {
@@ -374,11 +371,11 @@ public class Schedule {
 //                    if (cc.isLabRequired()) {
 //                        System.out.println("lab");
 //                    }
-                    System.out.println("Duration :" + cc.getDuration());
-                    System.out.println(cc.getNumberOfSeats());
-                    System.out.println("##");
-                }
+                System.out.println("Duration :" + cc.getDuration());
+                System.out.println(cc.getNumberOfSeats());
+                System.out.println("##");
             }
+
         }
     }
     
@@ -521,8 +518,8 @@ public class Schedule {
             }
             int pos = day * ROOM_NUM * DAY_HOURS + room * DAY_HOURS + time;
             classes.set(mpos, pos);
-            this.fromClassesToSlots();
         }
+        this.fromClassesToSlots();
         Fitness();
     }
 }

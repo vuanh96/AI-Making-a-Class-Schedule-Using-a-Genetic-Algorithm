@@ -190,11 +190,13 @@ public class InputFromMySQL {
                 for (Professor p : profList) {
                     if (p.getId() == profID) {
                         pNew = p;
+                        break;
                     }
                 }
                 for (Course c : courseList) {
                     if (c.getId() == courseID) {
                         cNew = c;
+                        break;
                     }
                 }
 
